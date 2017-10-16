@@ -6,6 +6,14 @@ Warning this is not clean code but it works with php7
 Changes will be documented.
 I modfied this script from php5 and it's the first 5 to 7 script I modified.
 
+.htaccess code I used:
+hp_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+
 sql
 grant all privileges on stream.* TO 'nameofuser'@'localhost' IDENTIFIED BY 'whitehat'; 
+
+
+
 </pre>
