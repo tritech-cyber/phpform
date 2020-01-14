@@ -1,11 +1,16 @@
  <?php
+ /*
+     $hostname = "localhost";
+   $databasename = "stream";
+   $username = "ssuser";
+   $password = "redhatredhat";
+  */
+ 
  include 'db/db.php';
- 
- 
  try{
 	 
 # MySQL with PDO_MYSQL  
-  $DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
+  $DBH = new PDO("mysql:hostname=$hostname;database =$databasename", $username, $password); 
   $STH = $DBH->query("select * from stream.formdata order by id desc;");  
   $STH->setFetchMode(PDO::FETCH_OBJ); 
 		//$therows = $STH->fetchColumn();
